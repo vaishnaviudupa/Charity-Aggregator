@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font: normal 18px sans-serif;
+    color: #333;
+    background-color: #eee;
+}
+
+.container-fluid{
+    padding:0;
+    margin:0;
+}
+
+header{
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    padding: 25px 40px;
+    background-color: #3A56B7;
+    overflow: hidden;
+}
+
+header .limiter{
+    max-width: 1000px;
+    margin: 0px auto;
+}
+
+header h3{
+    font: normal 24px/1.5 'Open Sans', sans-serif;
+    float: left;
+    color: #fff;
+    margin:0;
+}
+
+header a{
+    color:#fff;
+    float: right;
+    text-decoration: none;
+    display: inline-block;
+    padding: 13px 50px;
+    border-radius: 3px;
+    font: bold 14px/1 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    background-color:#F05283;
+    opacity: 0.9;
+}
+
+header a:hover{
+    color: #fff;
+    text-decoration: none;
+    opacity: 1;
+}
+
+@media (max-width: 850px) {
+
+    header h3{
+        float: none;
+        text-align: center;
+    }
+
+    header a{
+        margin-top: 20px;
+        float: none;
+    }
+
+}
+
+.img1 {
+		width:450px;
+		height:170px;
+		float:left;
+		}
+		
+		a{
+			text-decoration: none;
+			color: black;
+		}
+
+		button:hover{
+			cursor: pointer;
+		}
+
+		.clr{
+			clear:both;
+		}
+
+
+		nav ul li:hover a{
+			padding: 10px;
+			margin: 1px;
+			border-radius: 5%;
+			background-color: red;
+			color: white;
+		}
+
+		header5{
+			padding: 20px;
+			border-bottom: 3px solid black;
+			min-height: 150px;
+			
+		}
+
+		.head{
+			float: left;
+		}
+
+		.head img{
+			margin-top: 0;
+			margin-left: 50px;
+			position: absolute;
+			height: 80px;
+		}
+
+		.head p{
+			margin-left: 200px;
+			margin-top: 20px;
+		}
+		/*
+		header h1{
+			color: rgb(70, 70, 226);;
+			font-weight: bold;
+			float: left;
+		}
+		*/
+		nav ul{
+			float: right;
+			padding: 5px;
+			list-style: none;
+			margin-top: 103x;
+		}
+
+		nav ul li{
+			display: inline;
+			padding: 10px;
+			margin: 1px;
+			text-align: center;
+			font-size: 17px;
+			font-weight: bold;
+		}
+
+		ul li a{
+			color: white;
+		}
+		#current{
+			background-color: rgb(70, 70, 226);
+			font-weight: bold;
+			border-radius: 5%;
+		}
+
+		#current a{
+			color: white;
+		}
