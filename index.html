@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Payment</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/demo.css">
+	<style>
+		.img1 {
+		width:450px;
+		height:170px;
+		float:left;
+		}
+		
+		a{
+			text-decoration: none;
+			color: black;
+		}
+
+		button:hover{
+			cursor: pointer;
+		}
+
+		.clr{
+			clear:both;
+		}
+
+
+		nav ul li:hover a{
+			padding: 10px;
+			margin: 1px;
+			border-radius: 5%;
+			background-color: red;
+			color: white;
+		}
+
+		header5{
+			padding: 20px;
+			border-bottom: 3px solid black;
+			min-height: 150px;
+			
+		}
+
+		.head{
+			float: left;
+		}
+
+		.head img{
+			margin-top: 0;
+			margin-left: 50px;
+			position: absolute;
+			height: 80px;
+		}
+
+		.head p{
+			margin-left: 200px;
+			margin-top: 20px;
+		}
+		/*
+		header h1{
+			color: rgb(70, 70, 226);;
+			font-weight: bold;
+			float: left;
+		}
+		*/
+		nav ul{
+			float: right;
+			padding: 5px;
+			list-style: none;
+			margin-top: 103x;
+		}
+
+		nav ul li{
+			display: inline;
+			padding: 10px;
+			margin: 1px;
+			text-align: center;
+			font-size: 17px;
+			font-weight: bold;
+		}
+
+		ul li a{
+			color: white;
+		}
+		#current{
+			background-color: rgb(70, 70, 226);
+			font-weight: bold;
+			border-radius: 5%;
+		}
+
+		#current a{
+			color: white;
+		}
+</style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header>
+		<div class="header5">
+			<img src="mainlogo.jpeg" class="img1" alt="Helping Hand" style="width:20%">
+		</div>
+		<br><br>
+		<nav>
+                <ul>
+                    <li id="current"><a href="charity.php">HOME</a></li>
+					
+					<li><a href="donate.php">DONATE</a></li>
+                    <li><a href="aboutus.php">ABOUT US</a></li>                    
+                    <li><a href="contactus.php">CONTACT US</a></li>
+				
+                </ul>
+         </nav>
+	</header>
+	
+        <div class="creditCardForm">
+            <div class="heading">
+                <h1>Confirm Payment</h1>
+            </div>
+            <div class="payment">
+                <form action="payment.php" method="POST">
+                    <div class="form-group owner">
+                        <label for="owner">Owner</label>
+                        <input type="text" name="owner" class="form-control" id="owner">
+                    </div>
+                    <div class="form-group CVV">
+                        <label for="cvv">CVV</label>
+                        <input type="text" class="form-control" id="cvv">
+                    </div>
+                    <div class="form-group" id="card-number-field">
+                        <label for="cardNumber">Card Number</label>
+                        <input type="text" name="card_no" class="form-control" id="cardNumber">
+                    </div>
+					<div class="form-group owner">
+                        <label for="amt">Amount</label>
+                        <input type="text" name="amt" class="form-control" id="amt">
+                    </div><br>
+                    <div class="form-group" id="expiration-date">
+                        <label>Expiration Date</label>
+                        <select>
+                            <option value="01">January</option>
+                            <option value="02">February </option>
+                            <option value="03">March</option>
+                            <option value="04">April</option>
+                            <option value="05">May</option>
+                            <option value="06">June</option>
+                            <option value="07">July</option>
+                            <option value="08">August</option>
+                            <option value="09">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                        <select>
+                            <option value="19"> 2019</option>
+                            <option value="20"> 2020</option>
+                            <option value="21"> 2021</option>
+							<option value="21"> 2022</option>
+							<option value="21"> 2023</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="credit_cards">
+                        <img src="assets/images/visa.jpg" id="visa">
+                        <img src="assets/images/mastercard.jpg" id="mastercard">
+                        <img src="assets/images/amex.jpg" id="amex">
+                    </div>
+                    <div class="form-group" id="pay-now">
+                        <input type="submit" class="btn btn-default" value="Confirm"id="confirm-purchase">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <p class="examples-note">Here are some dummy credit card numbers and CVV codes so you can test out the form:</p>
+
+        <div class="examples">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Card Number</th>
+                            <th>Security Code</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Visa</td>
+                            <td>4716108999716531</td>
+                            <td>257</td>
+                        </tr>
+                        <tr>
+                            <td>Master Card</td>
+                            <td>5281037048916168</td>
+                            <td>043</td>
+                        </tr>
+                        <tr>
+                            <td>American Express</td>
+                            <td>342498818630298</td>
+                            <td>3156</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.payform.min.js" charset="utf-8"></script>
+    <!--script src="assets/js/script.js"></script-->
+</body>
+
+</html>
